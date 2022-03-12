@@ -14,5 +14,7 @@ CHIP And {
     OUT out;
 
     PARTS:
-    // Put your code here:
+    // 与门是与非门的取反
+    Nand(a=a, b=b, out=out1);
+    Not(in=out1, out=out);
 }
